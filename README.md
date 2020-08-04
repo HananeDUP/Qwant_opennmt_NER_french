@@ -1,0 +1,1 @@
+# Qwant_opennmt_NER_french
