@@ -8,12 +8,17 @@ data:
   source_1_vocabulary: ./dataset/train_valid/wiki-src-train-vocab.txt
   source_2_vocabulary: ./dataset/train_valid/wiki-src-train-tkt-vocab.txt
   target_vocabulary: ./dataset/train_valid/wiki-tgt-train-vocab.txt
-  tagging_scheme: bioes
 
 train:
   batch_size: 10
   max_step: 200
   save_summary_steps: 100
+
+score:
+  batch_size: 10
+
+infer:
+ batch_size: 10
 
 eval:
   batch_size: 10
