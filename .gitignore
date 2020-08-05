@@ -4,3 +4,5 @@ dataset/train_valid/wiki_train_words_bitext_large_2.txt
 #dataset/train_valid/wiki_test_tags_bitext_large_2.txt
 #dataset/train_valid/wiki_valid_tags_bitext_large_2.txt
 #dataset/train_valid/wiki_valid_words_bitext_large_2.txt
+#run/export/old/
+#run/export/30000/variables.data-00001-of-00002
