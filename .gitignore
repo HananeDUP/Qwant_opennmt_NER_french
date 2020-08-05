@@ -1,6 +1,7 @@
 dataset/train_valid/old
 dataset/train_valid/wiki_train_tags_bitext.txt
 dataset/train_valid/wiki_train_words_bitext.txt
+run_old/
 run/
 #run/export/old/
 #run/export/30000/variables.data-00001-of-00002
