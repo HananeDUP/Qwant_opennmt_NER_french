@@ -1,0 +1,162 @@
+2020-08-07 12:50:04.041175: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/lib64-nvidia
+2020-08-07 12:50:04.041392: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/lib64-nvidia
+2020-08-07 12:50:04.041435: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+INFO:tensorflow:Creating model directory run/
+2020-08-07 12:50:05.324895: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-08-07 12:50:05.378713: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-08-07 12:50:05.379477: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla K80 computeCapability: 3.7
+coreClock: 0.8235GHz coreCount: 13 deviceMemorySize: 11.17GiB deviceMemoryBandwidth: 223.96GiB/s
+2020-08-07 12:50:05.379862: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-08-07 12:50:05.669810: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-08-07 12:50:05.828013: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-08-07 12:50:05.854525: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-08-07 12:50:06.139612: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-08-07 12:50:06.164135: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-08-07 12:50:06.725314: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-08-07 12:50:06.725598: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-08-07 12:50:06.726481: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-08-07 12:50:06.727233: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-08-07 12:50:06.727602: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-08-07 12:50:06.733039: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2300000000 Hz
+2020-08-07 12:50:06.733277: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x29cebc0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-08-07 12:50:06.733316: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-08-07 12:50:06.821089: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-08-07 12:50:06.821956: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x29ced80 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-08-07 12:50:06.821992: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2020-08-07 12:50:06.823299: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-08-07 12:50:06.824063: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla K80 computeCapability: 3.7
+coreClock: 0.8235GHz coreCount: 13 deviceMemorySize: 11.17GiB deviceMemoryBandwidth: 223.96GiB/s
+2020-08-07 12:50:06.824141: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-08-07 12:50:06.824180: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-08-07 12:50:06.824226: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-08-07 12:50:06.824266: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-08-07 12:50:06.824304: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-08-07 12:50:06.824343: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-08-07 12:50:06.824382: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-08-07 12:50:06.824500: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-08-07 12:50:06.825284: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-08-07 12:50:06.826074: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-08-07 12:50:06.826136: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-08-07 12:50:06.832949: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-08-07 12:50:06.832992: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      0 
+2020-08-07 12:50:06.833010: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] 0:   N 
+2020-08-07 12:50:06.833163: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-08-07 12:50:06.833954: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-08-07 12:50:06.834693: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2020-08-07 12:50:06.834749: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1241] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10805 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:04.0, compute capability: 3.7)
+INFO:tensorflow:Using parameters:
+data:
+  eval_features_file: ./dataset/train_valid/wiki_valid_words_bitext.txt
+  eval_labels_file: ./dataset/train_valid/wiki_valid_tags_bitext.txt
+  source_1_vocabulary: ./dataset/train_valid/wiki-src-train-vocab.txt
+  source_2_vocabulary: ./dataset/train_valid/wiki-src-train-tkt-vocab.txt
+  target_vocabulary: ./dataset/train_valid/wiki-tgt-train-vocab.txt
+  train_features_file: ./dataset/train_valid/wiki_train_words_bitext.txt
+  train_labels_file: ./dataset/train_valid/wiki_train_tags_bitext.txt
+eval:
+  batch_size: 10
+  export_on_best: loss
+  external_evaluators: bleu
+  steps: 40000
+infer:
+  batch_size: 10
+  length_bucket_width: null
+model_dir: run/
+params:
+  average_loss_in_time: false
+  learning_rate: 0.017
+  num_hypotheses: 1
+  optimizer: SGD
+  optimizer_params:
+    momentum: 0.9
+score:
+  batch_size: 10
+train:
+  batch_size: 10
+  batch_type: examples
+  length_bucket_width: 1
+  max_step: 80000
+  sample_buffer_size: 500000
+  save_checkpoints_steps: 40000
+  save_summary_steps: 2000
+
+WARNING:tensorflow:No checkpoint to restore in run/
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/summary/summary_iterator.py:68: tf_record_iterator (from tensorflow.python.lib.io.tf_record) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use eager execution and: 
+`tf.data.TFRecordDataset(path)`
+INFO:tensorflow:Using MirroredStrategy with devices ('/job:localhost/replica:0/task:0/device:GPU:0',)
+INFO:tensorflow:Training on 5000000 examples
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1786: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+INFO:tensorflow:Number of model parameters: 24955440
+INFO:tensorflow:Number of model weights: 13 (trainable = 13, non trainable = 0)
+2020-08-07 12:51:17.102649: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 92777600 exceeds 10% of system memory.
+2020-08-07 12:51:17.171516: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 92777600 exceeds 10% of system memory.
+2020-08-07 12:51:17.195226: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 92777600 exceeds 10% of system memory.
+2020-08-07 12:51:17.220340: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 92777600 exceeds 10% of system memory.
+2020-08-07 12:51:17.251140: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 92777600 exceeds 10% of system memory.
+2020-08-07 12:51:20.746141: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-08-07 12:51:29.937094: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+INFO:tensorflow:Saved checkpoint run/ckpt-1
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Step = 2000 ; steps/s = 9.80, source words/s = 648, target words/s = 648 ; Learning rate = 0.017000 ; Loss = 4.722927
+INFO:tensorflow:Step = 4000 ; steps/s = 17.33, source words/s = 1148, target words/s = 1148 ; Learning rate = 0.017000 ; Loss = 2.642484
+INFO:tensorflow:Step = 6000 ; steps/s = 17.42, source words/s = 1153, target words/s = 1153 ; Learning rate = 0.017000 ; Loss = 0.760283
+INFO:tensorflow:Step = 8000 ; steps/s = 17.41, source words/s = 1149, target words/s = 1149 ; Learning rate = 0.017000 ; Loss = 2.404409
+INFO:tensorflow:Step = 10000 ; steps/s = 17.37, source words/s = 1148, target words/s = 1148 ; Learning rate = 0.017000 ; Loss = 1.777422
+INFO:tensorflow:Step = 12000 ; steps/s = 17.40, source words/s = 1157, target words/s = 1157 ; Learning rate = 0.017000 ; Loss = 1.514243
+INFO:tensorflow:Step = 14000 ; steps/s = 17.37, source words/s = 1150, target words/s = 1150 ; Learning rate = 0.017000 ; Loss = 0.838113
+INFO:tensorflow:Step = 16000 ; steps/s = 17.50, source words/s = 1159, target words/s = 1159 ; Learning rate = 0.017000 ; Loss = 1.398054
+INFO:tensorflow:Step = 18000 ; steps/s = 17.56, source words/s = 1164, target words/s = 1164 ; Learning rate = 0.017000 ; Loss = 1.291460
+INFO:tensorflow:Step = 20000 ; steps/s = 17.59, source words/s = 1167, target words/s = 1167 ; Learning rate = 0.017000 ; Loss = 1.444817
+INFO:tensorflow:Step = 22000 ; steps/s = 17.85, source words/s = 1180, target words/s = 1180 ; Learning rate = 0.017000 ; Loss = 2.157173
+INFO:tensorflow:Step = 24000 ; steps/s = 17.35, source words/s = 1147, target words/s = 1147 ; Learning rate = 0.017000 ; Loss = 1.654668
+INFO:tensorflow:Step = 26000 ; steps/s = 17.71, source words/s = 1169, target words/s = 1169 ; Learning rate = 0.017000 ; Loss = 3.367152
+INFO:tensorflow:Step = 28000 ; steps/s = 17.70, source words/s = 1172, target words/s = 1172 ; Learning rate = 0.017000 ; Loss = 2.707526
+INFO:tensorflow:Step = 30000 ; steps/s = 17.61, source words/s = 1166, target words/s = 1166 ; Learning rate = 0.017000 ; Loss = 2.545341
+INFO:tensorflow:Step = 32000 ; steps/s = 17.80, source words/s = 1181, target words/s = 1181 ; Learning rate = 0.017000 ; Loss = 3.327101
+INFO:tensorflow:Step = 34000 ; steps/s = 17.38, source words/s = 1150, target words/s = 1150 ; Learning rate = 0.017000 ; Loss = 0.204886
+INFO:tensorflow:Step = 36000 ; steps/s = 17.49, source words/s = 1159, target words/s = 1159 ; Learning rate = 0.017000 ; Loss = 1.416741
+INFO:tensorflow:Step = 38000 ; steps/s = 17.42, source words/s = 1154, target words/s = 1154 ; Learning rate = 0.017000 ; Loss = 1.620233
+INFO:tensorflow:Step = 40000 ; steps/s = 17.39, source words/s = 1151, target words/s = 1151 ; Learning rate = 0.017000 ; Loss = 1.354827
+INFO:tensorflow:Saved checkpoint run/ckpt-40000
+INFO:tensorflow:Running evaluation for step 40000
+INFO:tensorflow:Evaluation predictions saved to run/eval/predictions.txt.40000
+INFO:tensorflow:Evaluation result for step 40000: loss = 1.601380 ; perplexity = 4.959873 ; accuracy = 0.888322 ; bleu = 85.368645
+INFO:tensorflow:Exporting model to run/export/40000 (best loss so far: 1.601380)
+2020-08-07 14:00:12.096448: W tensorflow/python/util/util.cc:319] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+INFO:tensorflow:Assets written to: run/export/40000/assets
+INFO:tensorflow:Step = 42000 ; steps/s = 1.03, source words/s = 68, target words/s = 68 ; Learning rate = 0.017000 ; Loss = 1.467632
+INFO:tensorflow:Step = 44000 ; steps/s = 18.13, source words/s = 1199, target words/s = 1199 ; Learning rate = 0.017000 ; Loss = 2.725585
+INFO:tensorflow:Step = 46000 ; steps/s = 18.06, source words/s = 1198, target words/s = 1198 ; Learning rate = 0.017000 ; Loss = 0.340731
+INFO:tensorflow:Step = 48000 ; steps/s = 17.95, source words/s = 1183, target words/s = 1183 ; Learning rate = 0.017000 ; Loss = 0.703149
+INFO:tensorflow:Step = 50000 ; steps/s = 16.75, source words/s = 1109, target words/s = 1109 ; Learning rate = 0.017000 ; Loss = 0.606929
+INFO:tensorflow:Step = 52000 ; steps/s = 18.07, source words/s = 1197, target words/s = 1197 ; Learning rate = 0.017000 ; Loss = 2.118167
+INFO:tensorflow:Step = 54000 ; steps/s = 17.98, source words/s = 1190, target words/s = 1190 ; Learning rate = 0.017000 ; Loss = 0.641119
+INFO:tensorflow:Step = 56000 ; steps/s = 18.14, source words/s = 1198, target words/s = 1198 ; Learning rate = 0.017000 ; Loss = 1.631080
+INFO:tensorflow:Step = 58000 ; steps/s = 18.24, source words/s = 1209, target words/s = 1209 ; Learning rate = 0.017000 ; Loss = 0.962940
+INFO:tensorflow:Step = 60000 ; steps/s = 18.23, source words/s = 1206, target words/s = 1206 ; Learning rate = 0.017000 ; Loss = 1.081415
+INFO:tensorflow:Step = 62000 ; steps/s = 18.29, source words/s = 1208, target words/s = 1208 ; Learning rate = 0.017000 ; Loss = 0.646452
+INFO:tensorflow:Step = 64000 ; steps/s = 18.12, source words/s = 1201, target words/s = 1201 ; Learning rate = 0.017000 ; Loss = 2.423942
+INFO:tensorflow:Step = 66000 ; steps/s = 18.16, source words/s = 1199, target words/s = 1199 ; Learning rate = 0.017000 ; Loss = 1.802057
+INFO:tensorflow:Step = 68000 ; steps/s = 18.04, source words/s = 1196, target words/s = 1196 ; Learning rate = 0.017000 ; Loss = 0.827033
+INFO:tensorflow:Step = 70000 ; steps/s = 17.82, source words/s = 1185, target words/s = 1185 ; Learning rate = 0.017000 ; Loss = 1.188659
+INFO:tensorflow:Step = 72000 ; steps/s = 18.00, source words/s = 1187, target words/s = 1187 ; Learning rate = 0.017000 ; Loss = 0.890259
+INFO:tensorflow:Step = 74000 ; steps/s = 18.04, source words/s = 1195, target words/s = 1195 ; Learning rate = 0.017000 ; Loss = 0.798817
+INFO:tensorflow:Step = 76000 ; steps/s = 18.15, source words/s = 1200, target words/s = 1200 ; Learning rate = 0.017000 ; Loss = 0.619225
+INFO:tensorflow:Step = 78000 ; steps/s = 18.05, source words/s = 1194, target words/s = 1194 ; Learning rate = 0.017000 ; Loss = 0.617627
+INFO:tensorflow:Step = 80000 ; steps/s = 18.09, source words/s = 1195, target words/s = 1195 ; Learning rate = 0.017000 ; Loss = 0.444952
+INFO:tensorflow:Saved checkpoint run/ckpt-80000
+INFO:tensorflow:Running evaluation for step 80000
+INFO:tensorflow:Evaluation predictions saved to run/eval/predictions.txt.80000
+INFO:tensorflow:Evaluation result for step 80000: loss = 1.392726 ; perplexity = 4.025809 ; accuracy = 0.896724 ; bleu = 87.833620
+INFO:tensorflow:Exporting model to run/export/80000 (best loss so far: 1.392726)
+INFO:tensorflow:Assets written to: run/export/80000/assets
+2020-08-07 15:06:12.281426: W tensorflow/core/kernels/data/generator_dataset_op.cc:103] Error occurred when finalizing GeneratorDataset iterator: Cancelled: Operation was cancelled
+CPU times: user 17.3 s, sys: 2.88 s, total: 20.1 s
+Wall time: 2h 16min 12s

@@ -1,0 +1,120 @@
+2020-08-07 07:09:30.166096: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2020-08-07 07:09:30.166271: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2020-08-07 07:09:30.166294: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+INFO:tensorflow:Creating model directory run/
+2020-08-07 07:09:31.511538: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-08-07 07:09:31.557143: E tensorflow/stream_executor/cuda/cuda_driver.cc:351] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2020-08-07 07:09:31.557222: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (a4c156e949ba): /proc/driver/nvidia/version does not exist
+2020-08-07 07:09:31.557600: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-08-07 07:09:31.564622: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2000170000 Hz
+2020-08-07 07:09:31.564892: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x2ce4a00 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-08-07 07:09:31.564932: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+INFO:tensorflow:Using parameters:
+data:
+  eval_features_file: ./dataset/train_valid/wiki_valid_words_bitext.txt
+  eval_labels_file: ./dataset/train_valid/wiki_valid_tags_bitext.txt
+  source_1_vocabulary: ./dataset/train_valid/wiki-src-train-vocab.txt
+  source_2_vocabulary: ./dataset/train_valid/wiki-src-train-tkt-vocab.txt
+  target_vocabulary: ./dataset/train_valid/wiki-tgt-train-vocab.txt
+  train_features_file: ./dataset/train_valid/wiki_train_words_bitext.txt
+  train_labels_file: ./dataset/train_valid/wiki_train_tags_bitext.txt
+eval:
+  batch_size: 10
+  export_on_best: loss
+  external_evaluators: bleu
+  steps: 40000
+infer:
+  batch_size: 10
+  length_bucket_width: null
+model_dir: run/
+params:
+  average_loss_in_time: false
+  learning_rate: 0.0005
+  num_hypotheses: 1
+  optimizer: Adam
+score:
+  batch_size: 10
+train:
+  batch_size: 10
+  batch_type: examples
+  length_bucket_width: 1
+  max_step: 80000
+  sample_buffer_size: 500000
+  save_checkpoints_steps: 40000
+  save_summary_steps: 2000
+
+WARNING:tensorflow:No checkpoint to restore in run/
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/summary/summary_iterator.py:68: tf_record_iterator (from tensorflow.python.lib.io.tf_record) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use eager execution and: 
+`tf.data.TFRecordDataset(path)`
+WARNING:tensorflow:There are non-GPU devices in `tf.distribute.Strategy`, not using nccl allreduce.
+INFO:tensorflow:Using MirroredStrategy with devices ('/job:localhost/replica:0/task:0/device:CPU:0',)
+INFO:tensorflow:Training on 5000000 examples
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1786: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-08-07 07:09:50.758827: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 92777600 exceeds 10% of system memory.
+2020-08-07 07:09:50.958638: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 92777600 exceeds 10% of system memory.
+2020-08-07 07:09:51.039624: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 92777600 exceeds 10% of system memory.
+INFO:tensorflow:Number of model parameters: 24955440
+INFO:tensorflow:Number of model weights: 13 (trainable = 13, non trainable = 0)
+2020-08-07 07:10:33.045509: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 92777600 exceeds 10% of system memory.
+2020-08-07 07:10:33.087801: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 92777600 exceeds 10% of system memory.
+INFO:tensorflow:Saved checkpoint run/ckpt-1
+INFO:tensorflow:Step = 2000 ; steps/s = 3.73, source words/s = 248, target words/s = 248 ; Learning rate = 0.000500 ; Loss = 2.543178
+INFO:tensorflow:Step = 4000 ; steps/s = 4.45, source words/s = 294, target words/s = 294 ; Learning rate = 0.000500 ; Loss = 2.255472
+INFO:tensorflow:Step = 6000 ; steps/s = 4.42, source words/s = 292, target words/s = 292 ; Learning rate = 0.000500 ; Loss = 0.640678
+INFO:tensorflow:Step = 8000 ; steps/s = 4.34, source words/s = 287, target words/s = 287 ; Learning rate = 0.000500 ; Loss = 2.189081
+INFO:tensorflow:Step = 10000 ; steps/s = 4.44, source words/s = 294, target words/s = 294 ; Learning rate = 0.000500 ; Loss = 2.479133
+INFO:tensorflow:Step = 12000 ; steps/s = 4.46, source words/s = 295, target words/s = 295 ; Learning rate = 0.000500 ; Loss = 1.867358
+INFO:tensorflow:Step = 14000 ; steps/s = 4.44, source words/s = 294, target words/s = 294 ; Learning rate = 0.000500 ; Loss = 1.650167
+INFO:tensorflow:Step = 16000 ; steps/s = 4.41, source words/s = 293, target words/s = 293 ; Learning rate = 0.000500 ; Loss = 1.452851
+INFO:tensorflow:Step = 18000 ; steps/s = 4.45, source words/s = 294, target words/s = 294 ; Learning rate = 0.000500 ; Loss = 2.141769
+INFO:tensorflow:Step = 20000 ; steps/s = 4.47, source words/s = 294, target words/s = 294 ; Learning rate = 0.000500 ; Loss = 0.307397
+INFO:tensorflow:Step = 22000 ; steps/s = 4.51, source words/s = 297, target words/s = 297 ; Learning rate = 0.000500 ; Loss = 1.432242
+INFO:tensorflow:Step = 24000 ; steps/s = 4.46, source words/s = 296, target words/s = 296 ; Learning rate = 0.000500 ; Loss = 2.226613
+INFO:tensorflow:Step = 26000 ; steps/s = 4.42, source words/s = 292, target words/s = 292 ; Learning rate = 0.000500 ; Loss = 1.059487
+INFO:tensorflow:Step = 28000 ; steps/s = 4.46, source words/s = 294, target words/s = 294 ; Learning rate = 0.000500 ; Loss = 2.458399
+INFO:tensorflow:Step = 30000 ; steps/s = 4.41, source words/s = 291, target words/s = 291 ; Learning rate = 0.000500 ; Loss = 0.703844
+INFO:tensorflow:Step = 32000 ; steps/s = 4.39, source words/s = 290, target words/s = 290 ; Learning rate = 0.000500 ; Loss = 2.136221
+INFO:tensorflow:Step = 34000 ; steps/s = 4.40, source words/s = 290, target words/s = 290 ; Learning rate = 0.000500 ; Loss = 1.238441
+INFO:tensorflow:Step = 36000 ; steps/s = 4.38, source words/s = 289, target words/s = 289 ; Learning rate = 0.000500 ; Loss = 1.103190
+INFO:tensorflow:Step = 38000 ; steps/s = 4.32, source words/s = 286, target words/s = 286 ; Learning rate = 0.000500 ; Loss = 2.448740
+INFO:tensorflow:Step = 40000 ; steps/s = 4.37, source words/s = 289, target words/s = 289 ; Learning rate = 0.000500 ; Loss = 2.965191
+INFO:tensorflow:Saved checkpoint run/ckpt-40000
+INFO:tensorflow:Running evaluation for step 40000
+INFO:tensorflow:Evaluation predictions saved to run/eval/predictions.txt.40000
+INFO:tensorflow:Evaluation result for step 40000: loss = 1.418990 ; perplexity = 4.132943 ; accuracy = 0.897268 ; bleu = 87.532817
+INFO:tensorflow:Exporting model to run/export/40000 (best loss so far: 1.418990)
+2020-08-07 10:22:12.683262: W tensorflow/python/util/util.cc:319] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+INFO:tensorflow:Assets written to: run/export/40000/assets
+INFO:tensorflow:Step = 42000 ; steps/s = 0.70, source words/s = 46, target words/s = 46 ; Learning rate = 0.000500 ; Loss = 1.052810
+INFO:tensorflow:Step = 44000 ; steps/s = 4.63, source words/s = 306, target words/s = 306 ; Learning rate = 0.000500 ; Loss = 0.830188
+INFO:tensorflow:Step = 46000 ; steps/s = 4.62, source words/s = 304, target words/s = 304 ; Learning rate = 0.000500 ; Loss = 1.186674
+INFO:tensorflow:Step = 48000 ; steps/s = 4.63, source words/s = 306, target words/s = 306 ; Learning rate = 0.000500 ; Loss = 0.281585
+INFO:tensorflow:Step = 50000 ; steps/s = 4.62, source words/s = 305, target words/s = 305 ; Learning rate = 0.000500 ; Loss = 0.735531
+INFO:tensorflow:Step = 52000 ; steps/s = 4.63, source words/s = 305, target words/s = 305 ; Learning rate = 0.000500 ; Loss = 1.713517
+INFO:tensorflow:Step = 54000 ; steps/s = 4.65, source words/s = 308, target words/s = 308 ; Learning rate = 0.000500 ; Loss = 0.693459
+INFO:tensorflow:Step = 56000 ; steps/s = 4.65, source words/s = 308, target words/s = 308 ; Learning rate = 0.000500 ; Loss = 0.896836
+INFO:tensorflow:Step = 58000 ; steps/s = 4.71, source words/s = 311, target words/s = 311 ; Learning rate = 0.000500 ; Loss = 0.493234
+INFO:tensorflow:Step = 60000 ; steps/s = 4.70, source words/s = 311, target words/s = 311 ; Learning rate = 0.000500 ; Loss = 1.272738
+INFO:tensorflow:Step = 62000 ; steps/s = 4.69, source words/s = 310, target words/s = 310 ; Learning rate = 0.000500 ; Loss = 1.181955
+INFO:tensorflow:Step = 64000 ; steps/s = 4.70, source words/s = 310, target words/s = 310 ; Learning rate = 0.000500 ; Loss = 1.753735
+INFO:tensorflow:Step = 66000 ; steps/s = 4.67, source words/s = 308, target words/s = 308 ; Learning rate = 0.000500 ; Loss = 1.089225
+INFO:tensorflow:Step = 68000 ; steps/s = 4.72, source words/s = 312, target words/s = 312 ; Learning rate = 0.000500 ; Loss = 2.097887
+INFO:tensorflow:Step = 70000 ; steps/s = 4.69, source words/s = 310, target words/s = 310 ; Learning rate = 0.000500 ; Loss = 0.755697
+INFO:tensorflow:Step = 72000 ; steps/s = 4.72, source words/s = 312, target words/s = 312 ; Learning rate = 0.000500 ; Loss = 1.132664
+INFO:tensorflow:Step = 74000 ; steps/s = 4.71, source words/s = 312, target words/s = 312 ; Learning rate = 0.000500 ; Loss = 0.767688
+INFO:tensorflow:Step = 76000 ; steps/s = 4.70, source words/s = 311, target words/s = 311 ; Learning rate = 0.000500 ; Loss = 0.959660
+INFO:tensorflow:Step = 78000 ; steps/s = 4.70, source words/s = 312, target words/s = 312 ; Learning rate = 0.000500 ; Loss = 1.314220
+INFO:tensorflow:Step = 80000 ; steps/s = 4.68, source words/s = 309, target words/s = 309 ; Learning rate = 0.000500 ; Loss = 1.437672
+INFO:tensorflow:Saved checkpoint run/ckpt-80000
+INFO:tensorflow:Running evaluation for step 80000
+INFO:tensorflow:Evaluation predictions saved to run/eval/predictions.txt.80000
+INFO:tensorflow:Evaluation result for step 80000: loss = 1.298401 ; perplexity = 3.663435 ; accuracy = 0.903718 ; bleu = 89.015701
+INFO:tensorflow:Exporting model to run/export/80000 (best loss so far: 1.298401)
+INFO:tensorflow:Assets written to: run/export/80000/assets
+2020-08-07 13:21:23.932737: W tensorflow/core/kernels/data/generator_dataset_op.cc:103] Error occurred when finalizing GeneratorDataset iterator: Cancelled: Operation was cancelled
+CPU times: user 1min, sys: 7.85 s, total: 1min 8s
+Wall time: 6h 11min 57s
